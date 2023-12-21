@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td>Generated Password:</td>
+          <td><input type="text" id="generatedPassword" readonly /></td>
+        </tr>
+        <tr>
+          <td>Uppercase:</td>
+          <td><input type="checkbox" id="uppercaseCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td>Lowercase:</td>
+          <td><input type="checkbox" id="lowercaseCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td>Numbers:</td>
+          <td><input type="checkbox" id="numbersCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td>Special Characters:</td>
+          <td><input type="checkbox" id="specialCharsCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td>Custom Length:</td>
+          <td><input type="checkbox" id="lengthCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td>Exclude Similar Characters:</td>
+          <td><input type="checkbox" id="excludeSimilarCheckbox" checked /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button onclick="generatePassword()">Generate Password</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
